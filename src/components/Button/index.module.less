@@ -1,0 +1,11 @@
+@import "styles/variables.less";
+.button {
+  background-color: @primary-color;
+  @apply w-40 h-10 text-white;
+  padding: 0 20px;
+  border: none;
+  border-radius: 4px;
+  @media (min-width: theme("screens.sm")) {
+    @apply rounded-lg;
+  }
+}

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override base SVG style to work with Ant Design */
+svg {
+  vertical-align: initial;
+  display: inline-block;
+}
+
+@responsive {
+  .focus-border-white {
+    @apply focus:ring-2 ring-white ring-offset-1 rounded-sm !important;
+  }
+  .focus-border-primary {
+    @apply focus:ring-2 ring-primary ring-offset-1 rounded-sm !important;
+  }
+}
